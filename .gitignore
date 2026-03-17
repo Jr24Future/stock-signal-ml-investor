@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated outputs
+outputs/
+outputs_reddit_tech_only/
+outputs_reddit_with_sentiment/
+*.log
+
+# Generated CSVs that can be recreated
+backtest_curve_*.csv
+confusion_matrix_*.csv
+test_predictions.csv
+xgboost_feature_importance.csv
+outputs_reddit_ablation_comparison.csv
+reddit_daily_sentiment.csv
+
+# Large/raw datasets (usually keep local, not on GitHub)
+RedditNews.csv
+Combined_News_DJIA.csv
+upload_DJIA_table.csv
+
+# Experiment artifacts
+experiment_results.json
+metrics_summary.csv
