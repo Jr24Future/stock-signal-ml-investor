@@ -1,11 +1,8 @@
-# run_reddit_sentiment_ablation.py
-
 import json
 from pathlib import Path
 
 import pandas as pd
 
-# Make sure improved_stock_project.py is in the same folder
 from improved_stock_project import Config, run_experiment
 
 TICKERS = [
@@ -62,7 +59,7 @@ def run_with_sentiment():
         output_dir="outputs_reddit_with_sentiment",
         sentiment_csv_path=str(sentiment_file),
         sentiment_date_col="Date",
-        sentiment_ticker_col=None,  # market-wide daily sentiment
+        sentiment_ticker_col=None,
         sentiment_numeric_cols=[
             "mean_sentiment",
             "std_sentiment",

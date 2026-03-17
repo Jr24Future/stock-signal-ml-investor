@@ -1,5 +1,3 @@
-# build_reddit_sentiment_features.py
-
 import argparse
 from pathlib import Path
 
