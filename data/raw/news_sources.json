@@ -1,0 +1,8 @@
+{
+  "feeds": [
+    "https://feeds.reuters.com/reuters/businessNews",
+    "https://feeds.reuters.com/reuters/companyNews",
+    "https://www.investing.com/rss/news_25.rss",
+    "https://finance.yahoo.com/news/rssindex"
+  ]
+}

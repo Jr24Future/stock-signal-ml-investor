@@ -1,40 +1,47 @@
-# Python
+# Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+
+# Local environment
+.env
 .venv/
 venv/
-env/
 
-# Jupyter
-.ipynb_checkpoints/
-
-# OS / editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
-# Generated outputs
-outputs/
-outputs_reddit_tech_only/
-outputs_reddit_with_sentiment/
+# Logs
+logs/
 *.log
 
-# Generated CSVs that can be recreated
-backtest_curve_*.csv
-confusion_matrix_*.csv
-test_predictions.csv
-xgboost_feature_importance.csv
-outputs_reddit_ablation_comparison.csv
+# OS/editor junk
+.DS_Store
+Thumbs.db
+
+# Generated artifact files
+artifacts/*.csv
+artifacts/live_news_status.json
+
+# Keep only selected manifests
+!artifacts/manifest_technical.json
+!artifacts/manifest_sentiment.json
+
+# Generated live data
+data/raw/live_headlines.csv
+data/processed/live_daily_sentiment.csv
+
+# Historical/generated sentiment file
 reddit_daily_sentiment.csv
 
-# Large/raw datasets (usually keep local, not on GitHub)
+# Large/raw datasets
 RedditNews.csv
 Combined_News_DJIA.csv
 upload_DJIA_table.csv
 
-# Experiment artifacts
-experiment_results.json
-metrics_summary.csv
+# Old experiment outputs
+outputs/
+outputs_reddit_tech_only/
+outputs_reddit_with_sentiment/
+outputs_reddit_ablation_comparison.csv
+
+# Models: keep only the final named ones
+models/*.pkl
+!models/xgboost_technical.pkl
+!models/xgboost_sentiment.pkl

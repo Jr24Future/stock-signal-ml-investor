@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+xgboost
+yfinance
+vaderSentiment
+joblib
+streamlit
+feedparser
+python-dateutil
