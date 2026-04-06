@@ -1,0 +1,8 @@
+1. Launch app:
+python -m streamlit run src/main.py
+
+2. If needed, refresh technical-only live predictions:
+python -m src.predict --model-filename xgboost_technical.pkl --manifest-filename manifest_technical.json --predictions-filename predictions_technical_live.csv
+
+3. If needed, update live news:
+python -m src.update_live_news
